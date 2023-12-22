@@ -1,0 +1,8 @@
+@mixin nav-font {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+} 
+
+.nav {
+    @include nav-font;
+}

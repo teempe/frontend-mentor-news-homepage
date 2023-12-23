@@ -1,0 +1,31 @@
+.featured-item {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 2.4rem;
+    row-gap: 0.9rem;
+
+    &__image {
+        width: 10rem;
+        grid-row: 1 / -1;
+    }
+
+    &__number {
+        color: var(--color-silver);
+        margin-bottom: 0.1rem;
+    }
+
+    &__text {
+        color: var(--color-grayish-blue);
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--color-very-dark-blue);
+        transition: color 0.25s ease-out;
+
+        &:active, &:hover {
+            color: var(--color-soft-red);
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@mixin font-btn {
+@mixin btn-font {
     font-weight: var(--fw-bold);
     font-size: 1.4rem;
     line-height: 2.4rem;
@@ -6,5 +6,18 @@
 }
 
 .btn {
-    @include font-btn;
+    @include btn-font;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-almost-white);
+    
+    padding: 1.2rem 3.1rem;
+    background-color: var(--color-soft-red);
+    
+    transition: background-color 0.25s ease-out;
+
+    &:active, &:hover {
+        background-color: var(--color-very-dark-blue);
+    }
 }

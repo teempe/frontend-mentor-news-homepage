@@ -1,8 +1,51 @@
-@mixin nav-font {
+.nav {
     font-size: 1.8rem;
     line-height: 2.4rem;
-} 
 
-.nav {
-    @include nav-font;
+    background-color: var(--color-almost-white);
+    width: 25.6rem;
+
+    position: absolute;
+    right: -25.6rem;
+    top: 0;
+
+    padding: 2.8rem 1.6rem 8.6rem 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 8.6rem;
+
+    z-index: 100;
+    transition: 0.125s ease-out;
+
+    &__close-icon {
+        width: 3.1rem;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.4rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        transition: color 0.25s ease-out;
+
+        &:link, &:visited {
+            color: var(--color-very-dark-blue);
+        }
+
+        &:hover, &:active {
+            color: var(--color-soft-red);
+        }
+    }
+}
+
+.open-drawer {
+    transform: translateX(-25.6rem);
+
+
 }

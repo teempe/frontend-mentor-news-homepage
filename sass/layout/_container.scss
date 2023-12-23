@@ -1,0 +1,18 @@
+.container {
+    max-width: 37.5rem;
+    padding: 2.8rem 1.6rem 8rem;
+    background-color: var(--color-almost-white);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.overlay {
+    &::after {
+        content: "";
+        background: var(--color-very-dark-blue);
+        opacity: 0.5;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+}

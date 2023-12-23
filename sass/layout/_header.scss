@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 4.5rem;
+        height: 2.8rem;
+    }
+
+    &__hamburger-menu {
+        cursor: pointer;
+    }
+}

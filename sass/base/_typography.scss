@@ -14,7 +14,7 @@ body {
 
 .heading-2 {
     font-size: 3.2rem;
-    font-weight: var(--fw-extra-bold);
+    font-weight: var(--fw-bold);
     line-height: 3.2rem;
 }
 
@@ -28,4 +28,16 @@ body {
     font-size: 1.8rem;
     font-weight: var(--fw-extra-bold);
     line-height: 2.4rem;
+}
+
+@media only screen and (min-width: $bp-desktop) {
+    .heading-1 {
+        font-size: 5.6rem;
+        line-height: 5.6rem;
+    }
+
+    .heading-2 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
 }

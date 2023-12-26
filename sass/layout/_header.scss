@@ -11,4 +11,15 @@
     &__hamburger-menu {
         cursor: pointer;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+        &__logo {
+            width: 6.4rem;
+            height: 4rem;
+        }
+
+        &__hamburger-menu {
+            display: none;
+        }
+    }
 }

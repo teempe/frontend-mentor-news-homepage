@@ -4,6 +4,11 @@
     background-color: var(--color-almost-white);
     position: relative;
     overflow-x: hidden;
+
+    @media only screen and (min-width: $bp-desktop) {
+        max-width: 144rem;
+        padding: 8.9rem 16.5rem 12.9rem;
+    }
 }
 
 .overlay {

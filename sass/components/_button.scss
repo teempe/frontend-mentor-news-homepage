@@ -1,12 +1,8 @@
-@mixin btn-font {
+.btn {
     font-weight: var(--fw-bold);
     font-size: 1.4rem;
     line-height: 2.4rem;
     letter-spacing: 0.44rem;
-}
-
-.btn {
-    @include btn-font;
 
     text-decoration: none;
     text-transform: uppercase;

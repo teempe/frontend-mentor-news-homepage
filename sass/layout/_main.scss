@@ -5,9 +5,9 @@
 
     @media only screen and (min-width: $bp-desktop) {
         margin-top: 5.5rem;
-        grid-template-columns: 73rem auto;
-        grid-template-rows: auto auto;
-        row-gap: 7.2rem;
+        grid-template-columns: repeat(3, 35rem);
+        grid-template-rows: repeat(2, auto);
         column-gap: 3rem;
+        row-gap: 7.2rem;
     }
 }
